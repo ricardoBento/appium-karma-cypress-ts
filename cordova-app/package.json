@@ -3,10 +3,11 @@
   "version": "2.5.72",
   "displayName": "Flow Training",
   "scripts": {
-    "run-release": "phonegap run android --prod --release --buildConfig=build.json",
-    "build-release": "phonegap build android --prod --release --buildConfig=build.json",
-    "run-release-ios": "phonegap run ios --prod --release --buildConfig=build.json",
-    "build-release-ios": "phonegap build ios --prod --release --buildConfig=build.json"
+    "ionic:build": "echo 'Ionic BUILD phase'",
+    "run-release": "cordova run android --prod --release --buildConfig=build.json",
+    "build-release": "cordova build android --prod --release --buildConfig=build.json",
+    "run-release-ios": "cordova run ios --prod --release --buildConfig=build.json",
+    "build-release-ios": "cordova build ios --prod --release --buildConfig=build.json"
   },
   "cordova": {
     "platforms": [

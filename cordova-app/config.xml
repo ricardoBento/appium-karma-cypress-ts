@@ -159,12 +159,9 @@
         <variable name="FCM_VERSION" value="17.0.+" />
     </plugin>
     <intent-filter android:label="@string/app_name">
-  <action android:name="android.intent.action.VIEW" />
-  <category android:name="android.intent.category.DEFAULT" />
-  <category android:name="android.intent.category.BROWSABLE" />
-  <data android:scheme="http"
-      android:host="10.0.2.2"
-      android:port="9876"
-      android:pathPrefix="/" />
-</intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+        <data android:host="10.0.2.2" android:pathPrefix="/" android:port="9876" android:scheme="http" />
+    </intent-filter>
 </widget>

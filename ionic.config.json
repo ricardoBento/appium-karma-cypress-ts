@@ -1,7 +1,0 @@
-{
-  "name": "white-label",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "angular"
-}
