@@ -1,12 +1,16 @@
 // Karma configuration file, see link for more information
 // https://karma-runner.github.io/1.0/config/configuration-file.html
-
 module.exports = function (config) {
+  // const flowAppTest = require('path').join(__dirname, 'cordova-app/**/*spec.js');
+  // const flowAppTest = require('path').join(__dirname, 'cordova-app/**/*spec.ts');
+  // C:\Users\RBento\Documents\GitHub\appium-karma-cypress-ts\cordova-app\karma-test.ts
+  const flowAppTest = 'cordova-app/karma-test.spec.ts';
+  const indexjs = 'cordova-app/index.js';
   const srcjs = 'karma/src/**.js';
   const teststs = 'karma/test/**/*.ts';
   const srcts = 'karma/src/**/*.ts';
   config.set({
-    frameworks: ['jasmine'],
+    frameworks: ['jasmine', 'webpack'],
     plugins: [
       require('karma-jasmine'),
       require('karma-chrome-launcher'),
@@ -18,6 +22,8 @@ module.exports = function (config) {
       require('karma-spec-reporter')
     ],
     files: [
+      flowAppTest,
+      indexjs,
       srcjs,
       {
         pattern: srcts,
@@ -32,16 +38,18 @@ module.exports = function (config) {
       'text/x-typescript': ['ts', 'tsx']
     },
     preprocessors: {
+      [flowAppTest]: ['webpack'],
+      [indexjs]: ['webpack'],
       [srcjs]: ['webpack'],
       [srcts]: ['webpack'],
       [teststs]: ['webpack'],
     },
     client: {
       jasmine: {},
-      clearContext: true // leave Jasmine Spec Runner output visible in browser
+      clearContext: true
     },
     jasmineHtmlReporter: {
-      suppressAll: true // removes the duplicated traces
+      suppressAll: true
     },
     coverageReporter: {
       dir: require('path').join(__dirname, './coverage/ngv'),
@@ -63,16 +71,14 @@ module.exports = function (config) {
     restartOnFileChange: true,
     webpack: {
       module: {
-        rules: [
-          {
-            test: /\.js$/i,
-            exclude: /(node_modules)/,
-            loader: 'babel-loader',
-            options: {
-              presets: ['@babel/preset-env']
-            }
+        rules: [{
+          test: /\.js$/i,
+          exclude: /(node_modules)/,
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
           }
-        ]
+        }]
       }
     },
     webpackMiddleware: {
