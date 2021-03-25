@@ -1,0 +1,8 @@
+app-layout {
+    position: relative;
+    top: calc(35vh - 200px);
+}
+ion-toolbar {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+}

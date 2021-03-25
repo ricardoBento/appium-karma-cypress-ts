@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>32953671586-1dusqvlpglku7sfjvtlot9efto838tmn.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.32953671586-1dusqvlpglku7sfjvtlot9efto838tmn</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>32953671586-hq4aorboh972vrv496nlvktjd13kjvge.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCLeqBqq4A6joApQii_9HgtyEYAEBuRIcU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>32953671586</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>uk.flow.white.label</string>
+	<key>PROJECT_ID</key>
+	<string>ionic-push-fcm-2301</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ionic-push-fcm-2301.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:32953671586:ios:9aa9c2a4c9e41e4eac5cfb</string>
+	<key>DATABASE_URL</key>
+	<string>https://ionic-push-fcm-2301.firebaseio.com</string>
+</dict>
+</plist>

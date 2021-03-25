@@ -1,0 +1,19 @@
+ion-row.category-list-row {
+  position: relative;
+  top: 10vh;
+  ion-list {
+    --ion-background-color: transparent !important;
+  }
+  ion-item {
+    margin: 0 0 0vh 0;
+    background-color: transparent !important;
+    ion-button {
+      width: 100%;
+      ion-icon {
+        font-size: 35px;
+        position: relative;
+        left: 30%;
+      }
+    }
+  }
+}

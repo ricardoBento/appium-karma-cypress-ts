@@ -1,0 +1,16 @@
+// Fix keyboard pushing content up
+.scroll-content {
+    padding-bottom: 0 !important;
+}
+ion-text.passreset {
+    a {
+        list-style-type: none;
+        color: inherit;
+    }
+}
+.hidden {
+  display: none;
+}
+#textBox{
+  color: yellow;
+}

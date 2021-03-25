@@ -1,0 +1,30 @@
+{
+    "ios": {
+        "debug": {
+            "codeSignIdentity": "iPhone Distribution: Simon Faughnan",
+            "developmentTeam": "VP55678HHH",
+            "packageType": "development"
+        },
+        "release": {
+            "codeSignIdentity": "iPhone Distribution: Simon Faughnan",
+            "developmentTeam": "VP55678HHH",
+            "packageType": "app-store"
+        }
+    },
+    "android": {
+        "debug": {
+            "keystore": "./flowzone_keystore.keystore",
+            "storePassword": "Winter2015",
+            "alias": "flowzone",
+            "password": "Winter2015",
+            "keystoreType": ""
+        },
+        "release": {
+            "keystore": "./flowzone_keystore.keystore",
+            "storePassword": "Winter2015",
+            "alias": "flowzone",
+            "password": "Winter2015",
+            "keystoreType": ""
+        }
+    }
+}

@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar translucent="true">
+    <ion-row>
+      <ion-col class='ion-text-center'>
+        <ion-button fill='clear' expand="block" (click)='back(back_to_url)'>
+          <div>
+            <svg *ngIf='back_button' xmlns="http://www.w3.org/2000/svg" width="12.728" height="20.192" viewBox="0 0 12.728 20.192">
+              <g id="backButton" transform="translate(2.828 2.828)">
+                <line id="Line_8" data-name="Line 8" x1="10" transform="translate(0 7.071) rotate(-45)" fill="none" stroke="#646464" stroke-linecap="round" stroke-width="4"/>
+                <line id="Line_9" data-name="Line 9" x1="10" transform="translate(0 7.464) rotate(45)" fill="none" stroke="#646464" stroke-linecap="round" stroke-width="4"/>
+              </g>
+            </svg>
+            <ion-text>
+              <span>{{ title }}</span>
+            </ion-text>
+          </div>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>

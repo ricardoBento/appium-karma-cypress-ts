@@ -1,0 +1,28 @@
+// Fix keyboard pushing content up
+.scroll-content {
+  padding-bottom: 0 !important;
+}
+.auth-background {
+  margin-top: -7vh;
+  height: 107%;
+}
+.pass-reset-text {
+  color: var(--ion-color-light);
+  padding: 0 10vw 5vh 10vw;
+  position: relative;
+  h2 {
+    font-size: 19px;
+  }
+}
+ion-row.logo-row {
+  ion-col {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-items: center;
+      ion-img.app-logo {
+          height: 181px;
+          width: 267px;
+      }
+  }
+}
