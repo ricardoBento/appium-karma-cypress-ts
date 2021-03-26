@@ -1,9 +1,6 @@
 // Karma configuration file, see link for more information
 // https://karma-runner.github.io/1.0/config/configuration-file.html
 module.exports = function (config) {
-  // const flowAppTest = require('path').join(__dirname, 'cordova-app/**/*spec.js');
-  // const flowAppTest = require('path').join(__dirname, 'cordova-app/**/*spec.ts');
-  // C:\Users\RBento\Documents\GitHub\appium-karma-cypress-ts\cordova-app\karma-test.ts
   const flowAppTest = 'cordova-app/karma-test.spec.ts';
   const indexjs = 'cordova-app/index.js';
   const srcjs = 'karma/src/**.js';
