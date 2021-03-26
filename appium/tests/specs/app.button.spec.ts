@@ -4,12 +4,11 @@ import AppPage from '../pageobjects/app.page';
 
 describe('Android', () => {
   let appHomeButton: Element;
-  var browser: any;
   beforeEach(() => {
     WebViewScreen.waitForWebsiteLoaded();
-    WebViewScreen.switchToContext(CONTEXT_REF.WEBVIEW);
-    appHomeButton = AppPage.appHomeButton;
     WebViewScreen.switchToContext(CONTEXT_REF.NATIVE);
+    appHomeButton = AppPage.appHomeButton;
+    WebViewScreen.switchToContext(CONTEXT_REF.WEBVIEW);
   });
 
   it('test 1', () => {

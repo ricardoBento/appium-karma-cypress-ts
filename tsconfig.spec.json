@@ -6,13 +6,5 @@
     "types": [
       "jasmine"
     ]
-  },
-  "files": [
-    "karma/src/**/*.js",
-    "karma/test/**/*.js"
-  ],
-  "include": [
-    "karma/**/*.spec.ts",
-    "karma/**/*.d.ts"
-  ]
+  }
 }

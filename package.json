@@ -15,12 +15,14 @@
     "cypress": "cd node_modules/.bin/cypress && open",
     "cypress-dashboard": "npx cypress run --record --key 84c6a1ba-9821-41c1-aa41-0b1e4e127044",
     "appium": "appium --chromedriver-executable C:/chromedriver_win32/chromedriver.exe",
+    "appium-local-chromedriver": "appium --chromedriver-executable ./chromedriver_win32/chromedriver.exe",
     "appium-doctor": "appium-doctor",
     "wdio-test": "npx wdio run appium/conf/wdio.conf.js",
     "kill-appium-server": "taskkill /F /IM node.exe"
   },
   "private": true,
   "dependencies": {
+    "@wdio/types": "^7.2.1",
     "babel-preset-es2015": "^6.24.1",
     "karma-cli": "^2.0.0",
     "karma-sourcemap-loader": "^0.3.8",
